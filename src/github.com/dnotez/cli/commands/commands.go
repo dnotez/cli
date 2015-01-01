@@ -1,8 +1,7 @@
 package commands
 
 import (
-	"fmt"    "utils"
-
+	"fmt"    jww "github.com/spf13/jwalterweatherman"
 )
 
 //DNotzCmd is root command. Every other command attached to PlCmd is a child command to it.
@@ -20,7 +19,7 @@ Complete documentation is available at http://gohugo.io`,
 
 var dzCmdV *cobra.Command
 
-var Host, CfgFile
+var Host, CfgFile string
 
 //Execute adds all child commands to the root command HugoCmd and sets flags appropriately.
 func Execute() {
@@ -47,7 +46,7 @@ func init() {
 // InitializeConfig initializes a config file with sensible default configuration flags.
 func InitializeConfig() {
 	viper.SetConfigFile(CfgFile)
-	viper.AddConfigPath(Source)
+	//viper.AddConfigPath(Source)
 	err := viper.ReadInConfig()
 	if err != nil {
 		jww.ERROR.Println("Unable to locate Config file. Perhaps you need to create a new site. Run `hugo help new` for details")

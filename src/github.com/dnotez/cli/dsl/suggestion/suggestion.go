@@ -2,7 +2,6 @@ package suggestion
 
 import (
 	"bytes"
-	"config"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"

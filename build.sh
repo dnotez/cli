@@ -3,8 +3,9 @@
 echo "Building CLI ..."
 
 export GOPATH=`pwd`
+cd src
+go get -v
+cd -
 
-go get
-
-go build -o bin/pl pl
-go build -o bin/dz main
+#go build -o bin/pl pl
+go build -o bin/dz src/main.go

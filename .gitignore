@@ -6,3 +6,13 @@
 
 bin
 pkg
+
+src/gopkg.in
+src/golang.org
+src/github.com/armon
+src/github.com/BurntSushi
+src/github.com/coreos
+src/github.com/kr
+src/github.com/mitchellh
+src/github.com/spf13
+src/github.com/xordataexchange

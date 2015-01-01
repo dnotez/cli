@@ -5,8 +5,6 @@ import (
 	"log"
 	flag "mflag"
 	"os"
-	"ping"
-	"utils"
 )
 
 func main() {

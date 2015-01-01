@@ -1,9 +1,6 @@
 package main
 
 import (
-	"dsl/article"
-	"dsl/cmd"
-	"dsl/suggestion"
 	"fmt"
 	flag "mflag"
 	"time"

@@ -6,7 +6,6 @@ package cmd
 
 import (
 	"bytes"
-	"config"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"

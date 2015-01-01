@@ -1,6 +1,4 @@
-package dz
-
-import "commands"
+package main
 
 func main() {
 	commands.Execute()

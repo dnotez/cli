@@ -1,7 +1,6 @@
 package ping
 
 import (
-	"config"
 	"encoding/json"
 	"net/http"
 )
