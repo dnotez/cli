@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
+	flag "github.com/dnotez/cli/mflag"
 	"io"
-	flag "mflag"
 	"os"
 	"reflect"
 	"strings"
@@ -22,7 +22,7 @@ func (cli *PlCli) getMethod(args ...string) (func(...string) error, bool) {
 		if len(s) == 0 {
 			return nil, false
 		}
-		camelArgs[i] = strings.ToUpper(s[:1])+strings.ToLower(s[1:])
+		camelArgs[i] = strings.ToUpper(s[:1]) + strings.ToLower(s[1:])
 	}
 	methodName := "Cmd" + strings.Join(camelArgs, "")
 	method := reflect.ValueOf(cli).MethodByName(methodName)

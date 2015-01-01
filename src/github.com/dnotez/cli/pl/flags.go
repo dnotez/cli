@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	flag "mflag"
+	flag "github.com/dnotez/cli/mflag"
 	"os"
 )
 
