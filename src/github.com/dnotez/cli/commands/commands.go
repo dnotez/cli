@@ -1,7 +1,13 @@
 package commands
 
 import (
-	"fmt"    jww "github.com/spf13/jwalterweatherman"
+	"fmt"
+
+	"github.com/dnotez/cli/utils"
+
+	"github.com/spf13/cobra"
+	jww "github.com/spf13/jwalterweatherman"
+	"github.com/spf13/viper"
 )
 
 //DNotzCmd is root command. Every other command attached to PlCmd is a child command to it.
