@@ -7,6 +7,8 @@ import (
 	"io/ioutil"
 	"net/http"
 	"time"
+
+	"github.com/dnotez/cli/config"
 )
 
 type Article struct {
@@ -78,6 +80,9 @@ func Get(key string, keyType string, count int) (*[]Article, time.Duration, erro
 	err = json.Unmarshal(body, &response)
 	if err != nil {
 		return nil, 0, err
+	}
+	if len(response.Results) < 1 {
+		return nil, 0, errors.New("No result")
 	}
 	articles := make([]Article, len(response.Results))
 	for i, a := range response.Results {

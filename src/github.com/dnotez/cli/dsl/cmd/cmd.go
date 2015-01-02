@@ -12,6 +12,8 @@ import (
 	"net/http"
 	"os/user"
 	"time"
+
+	"github.com/dnotez/cli/config"
 )
 
 type SaveCmdRequest struct {

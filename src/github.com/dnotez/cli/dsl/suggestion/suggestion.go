@@ -7,6 +7,8 @@ import (
 	"io/ioutil"
 	"net/http"
 	"time"
+
+	"github.com/dnotez/cli/config"
 )
 
 type SuggestionResult struct {
@@ -29,7 +31,7 @@ type SuggestionResponse struct {
 func (r *SuggestionResponse) Stringer() string {
 	s := fmt.Sprintf("%d results", len(r.Results))
 	for _, result := range r.Results {
-		s += "\n"+result.Stringer()
+		s += "\n" + result.Stringer()
 	}
 	return s
 }
