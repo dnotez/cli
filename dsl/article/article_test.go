@@ -23,7 +23,7 @@ func TestGetInvalidResponse(t *testing.T) {
 }
 
 func TestGet(t *testing.T) {
-	sErr := test.ServeFile("testdata/get_article.json")
+	sErr := test.ServeFile("../../testdata/get_article.json")
 	if sErr != nil {
 		t.Errorf("Could not read test json file:%s\n", sErr)
 		return
