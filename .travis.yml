@@ -7,7 +7,4 @@ go:
  - tip
 
 script:
- - export GOPATH=`pwd`
- - echo "$GOPATH"
- - go get -d -v ./...
- - go build -o bin/dz src/main.go
+ - go test -v ./...
