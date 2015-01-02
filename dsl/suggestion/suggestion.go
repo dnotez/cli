@@ -48,7 +48,7 @@ func Suggest(query string, resourceType string) (*SuggestionResponse, time.Durat
 	if err != nil {
 		return nil, 0, err
 	}
-	resp, err := http.Post(config.SERVER_URL+"/extension/suggestion", "application/json", bytes.NewReader(buf))
+	resp, err := http.Post(config.Server.URL+"/extension/suggestion", "application/json", bytes.NewReader(buf))
 	if err != nil {
 		return nil, 0, err
 	}

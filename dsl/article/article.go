@@ -37,7 +37,7 @@ type IdResponse struct {
 
 func Remove(id string) (*IdResponse, time.Duration, error) {
 	start := time.Now()
-	req, err := http.NewRequest("DELETE", config.SERVER_URL+"/cli/cmd/"+id, nil)
+	req, err := http.NewRequest("DELETE", config.Server.URL+"/cli/cmd/"+id, nil)
 	resp, err := http.DefaultClient.Do(req)
 	if err != nil {
 		return nil, 0, err
@@ -63,7 +63,7 @@ func Remove(id string) (*IdResponse, time.Duration, error) {
 
 func Get(key string, keyType string, count int) (*[]Article, time.Duration, error) {
 	start := time.Now()
-	url := fmt.Sprintf("%s/cli/cmd/%s?k=%s&n=%d", config.SERVER_URL, key, keyType, count)
+	url := fmt.Sprintf("%s/cli/cmd/%s?k=%s&n=%d", config.Server.URL, key, keyType, count)
 	resp, err := http.Get(url)
 	if err != nil {
 		return nil, 0, err

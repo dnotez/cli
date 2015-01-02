@@ -38,7 +38,7 @@ func (request *SaveCmdRequest) Submit() (*SaveCmdResponse, time.Duration, error)
 	if err != nil {
 		return nil, 0, err
 	}
-	resp, err := http.Post(config.SERVER_URL+"/cli/cmd", "application/json", bytes.NewReader(buf))
+	resp, err := http.Post(config.Server.URL+"/cli/cmd", "application/json", bytes.NewReader(buf))
 	if err != nil {
 		return nil, 0, err
 	}

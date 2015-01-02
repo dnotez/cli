@@ -3,6 +3,8 @@ package ping
 import (
 	"encoding/json"
 	"net/http"
+
+	"github.com/dnotez/cli/config"
 )
 
 type Pong struct {
@@ -11,7 +13,7 @@ type Pong struct {
 
 func Ping() (pong *Pong, err error) {
 	var p Pong
-	r, err := http.Get(config.SERVER_URL + "/api/ping")
+	r, err := http.Get(config.Server.URL + "/api/ping")
 	if err != nil {
 		return nil, err
 	}
