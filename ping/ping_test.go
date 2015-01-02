@@ -1,7 +1,7 @@
 package ping
 
 import (
-	"github.com/dnotez/cli/test"
+	"github.com/dnotez/dnotez-cli/test"
 	"testing"
 )
 

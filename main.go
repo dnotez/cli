@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/dnotez/cli/commands"
+	"github.com/dnotez/dnotez-cli/commands"
 )
 
 func main() {

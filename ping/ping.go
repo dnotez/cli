@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/dnotez/cli/config"
+	"github.com/dnotez/dnotez-cli/config"
 )
 
 type Pong struct {

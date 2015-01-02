@@ -2,7 +2,7 @@ package article
 
 import (
 	"fmt"
-	"github.com/dnotez/cli/test"
+	"github.com/dnotez/dnotez-cli/test"
 	"testing"
 )
 

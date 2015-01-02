@@ -2,7 +2,7 @@ package test
 
 import (
 	"fmt"
-	"github.com/dnotez/cli/config"
+	"github.com/dnotez/dnotez-cli/config"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"

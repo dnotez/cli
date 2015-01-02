@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dnotez/cli/dsl/cmd"
+	"github.com/dnotez/dnotez-cli/dsl/cmd"
 	"github.com/spf13/cobra"
 	//"github.com/wsxiaoys/terminal"
 )

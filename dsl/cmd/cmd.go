@@ -13,7 +13,7 @@ import (
 	"os/user"
 	"time"
 
-	"github.com/dnotez/cli/config"
+	"github.com/dnotez/dnotez-cli/config"
 )
 
 type SaveCmdRequest struct {

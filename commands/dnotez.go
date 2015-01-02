@@ -1,7 +1,7 @@
 package commands
 
 import (
-	"github.com/dnotez/cli/utils"
+	"github.com/dnotez/dnotez-cli/utils"
 
 	"github.com/spf13/cobra"
 	jww "github.com/spf13/jwalterweatherman"

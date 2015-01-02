@@ -2,7 +2,7 @@ package commands
 
 import (
 	"fmt"
-	"github.com/dnotez/cli/dsl/article"
+	"github.com/dnotez/dnotez-cli/dsl/article"
 	"github.com/spf13/cobra"
 	//"github.com/wsxiaoys/terminal"
 )
