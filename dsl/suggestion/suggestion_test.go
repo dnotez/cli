@@ -1,7 +1,6 @@
 package suggestion
 
 import (
-	"fmt"
 	"github.com/dnotez/cli/test"
 	"testing"
 )

@@ -3,6 +3,7 @@ package test
 import (
 	"fmt"
 	"github.com/dnotez/cli/config"
+	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
 )
@@ -19,8 +20,16 @@ func Serve(json string) {
 	ts = httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, json)
 	}))
-
 	config.Server.URL = ts.URL
+}
+
+func ServeFile(filePath string) error {
+	buf, err := ioutil.ReadFile(filePath)
+	if err != nil {
+		return err
+	}
+	Serve(string(buf))
+	return nil
 }
 
 func StopServer() {

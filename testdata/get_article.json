@@ -1,0 +1,19 @@
+{
+  "error": false,
+  "results": [
+    {
+      "item": {
+        "id":"id1",
+        "title":"title2",
+        "body":"body3",
+        "text":"text4",
+        "url":"url5",
+        "mimeType":"mime6",
+        "md5":"md5-7",
+        "saveDate": 1000
+      },
+      "score": 0.34
+    }
+  ],
+  "total": 1
+}
