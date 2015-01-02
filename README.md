@@ -1,4 +1,4 @@
-cli
+cli  [![Build Status](https://travis-ci.org/dnotez/cli.svg?branch=master)](https://travis-ci.org/dnotez/cli)
 ===
 
 dNotez command line interface
