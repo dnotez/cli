@@ -19,6 +19,7 @@ Examples:
 dz search elasticsearch curl
 dz search -t bash for loop	`,
 	Run: func(cmd *cobra.Command, args []string) {
+		InitializeConfig()
 		if len(args) < 1 {
 			cmd.Help()
 		} else {

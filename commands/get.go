@@ -21,6 +21,7 @@ dz get 577ae747-951b-41d5-a7a6-1f0298a5766f
 dz get -f text 577ae747-951b-41d5-a7a6-1f0298a5766f
 dz get -l update docker`,
 	Run: func(cmd *cobra.Command, args []string) {
+		InitializeConfig()
 		if len(args) < 1 && !label {
 			cmd.Help()
 		} else {

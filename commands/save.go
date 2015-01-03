@@ -19,6 +19,7 @@ Examples:
 dz save "apt-get update; apt-get upgrade"
 dz save -l update-docker "curl -sSL https://get.docker.com/ubuntu/ | sudo sh"`,
 	Run: func(cmd *cobra.Command, args []string) {
+		InitializeConfig()
 		if len(args) < 1 {
 			cmd.Help()
 		} else {

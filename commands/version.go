@@ -23,6 +23,7 @@ var version = &cobra.Command{
 	Short: "Print the version number",
 	Long:  `Prints build date and commit hash details`,
 	Run: func(cmd *cobra.Command, args []string) {
+		InitializeConfig()
 		if buildDate == "" {
 			setBuildDate() // set the build date from executable's mdate
 		} else {

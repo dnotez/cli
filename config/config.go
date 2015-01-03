@@ -5,7 +5,3 @@ type ServerConfig struct {
 }
 
 var Server ServerConfig
-
-func init() {
-	Server.URL = "http://192.168.0.65:5050"
-}

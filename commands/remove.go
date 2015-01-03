@@ -14,6 +14,7 @@ var removeCmd = &cobra.Command{
 Examples:
 dz rm f5cda30e-3d0d-4d4c-b593-4c0a8befa4ef`,
 	Run: func(cmd *cobra.Command, args []string) {
+		InitializeConfig()
 		if len(args) < 1 {
 			cmd.Help()
 		} else {
